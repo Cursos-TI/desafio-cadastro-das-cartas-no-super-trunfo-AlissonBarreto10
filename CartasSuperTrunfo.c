@@ -1,6 +1,7 @@
 ﻿#include <windows.h>
 #include <locale.h>
 #include <stdio.h>
+#include <string.h> 
 
 int main() {
 system("chcp 65001");
@@ -12,24 +13,31 @@ int populacao, pontoturistico;
 
 printf ("Digite a população da carta:\n");
 scanf ("%d", &populacao);
+getchar();
 
 printf("Digite o Ponto Turistico da carta:\n");
 scanf ("%d", &pontoturistico);
+getchar();
 
 printf("Digite o Estado da carta:\n");
-scanf("%c", &estadoA);
+scanf(" %c", &estadoA);
+getchar();
 
 printf("Digite o Código da carta:\n");
 fgets(codigocarta, sizeof(codigocarta), stdin);
+codigocarta[strcspn(codigocarta, "\n")] = 0;
 
 printf("Digite o Nome da cidade:\n");
 fgets(nomecidade, sizeof(nomecidade), stdin);
+nomecidade[strcspn(nomecidade, "\n")] = 0;
 
 printf("Digite a Área da cidade:\n");
-scanf("%f, &area");
+scanf("%f", &area);
+getchar();
 
 printf("Digite o PIB da cidade:\n");
 scanf("%f", &pib);
+getchar();
 
 printf("Carta 1:\n");
 printf("População: %d\n", populacao);
@@ -50,21 +58,27 @@ printf("Área: %f km²\n", area);
 
 printf ("Digite a população da carta:\n");
 scanf ("%d", &populacao2);
+getchar();
 
 printf("Digite o Ponto Turistico da carta:\n");
 scanf ("%d", &pontoturistico2);
+getchar();
 
 printf("Digite o Estado da carta:\n");
 scanf("%c", &estadoB);
+getchar();
 
 printf("Digite o Código da carta:\n");
 fgets(codigocarta2, sizeof(codigocarta2), stdin);
+codigocarta2[strcspn(nomecidade, "\n")] = 0;
 
 printf("Digite o Nome da cidade:\n");
 fgets(nomecidade2, sizeof(nomecidade2), stdin);
+nomecidade2[strcspn(nomecidade, "\n")] = 0;
 
 printf("Digite a Área da cidade:\n");
 scanf("%f, &area2");
+getchar();
 
 printf("Digite o PIB da cidade:\n");
 scanf("%f", &pib2);
