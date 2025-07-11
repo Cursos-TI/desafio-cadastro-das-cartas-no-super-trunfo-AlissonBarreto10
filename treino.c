@@ -79,7 +79,6 @@ float quociente = (float) a / b; // 'a' é explicitamente convertido para float.
 
 printf ("Quociente %.2f\n", quociente);
 
-
 //Conversão implicita.
 //Ocorre automaticamente quando mistura diferentes tipos de dados em uma unica expressão.
 
@@ -112,5 +111,43 @@ printf ("Numero pequeno atualizado (short int): %d"\n, numeroPequeno);
 //printf ("\n*** Tamanho das variáveis ***\n");
 //printf ("Short int: %lu B - int: %lu B - long int: %lu B\n", sizeof(short int), sizeof(int), sizeof(long long int);
 //printf("float: %lu B - Double: %lu B - long double: %lu B\n", sizeof (float), sizeof (double), sizeof(long double);
+
+//TREINO 6
+
+// > maior que
+// < menor que
+// >= maior ou igual a
+// <= menor ou igual a
+// == igual a
+// != diferente de 
+
+int a = a;
+int b = 20;
+
+printf ("a > b: %d\n", a > b);
+printf ("a < b: %d\n", a < b);
+printf ("a == b: %d\n", a == b);
+printf ("a != b: %d\n", a != b);
+
+//Variaveis de tipos diferentes
+
+int x = 5;
+float y = 5.0;
+//char  c = 'a';
+
+printf("x >= y: %d\n", x >= y);
+printf("x == y: %d\n", x == y);
+printf("x != y: %d\n", x != y);
+
+//printf("x >= c: %d\n", x >= c);
+//printf("O valor ASCII de %c é %d: \n", c, c);
+
+//Conversão explicita de tipos (casting)
+
+float numero 1 = 10.2; //quando coloco (int) em numero1, descarta os numeros decimais
+int numero2 = 10;
+
+printf("numero1 > numero2: %d\n", numero1 > numero2);
+printf("numero 1 == numero2: %d\n", numero 1 == numero2);
 
 }
